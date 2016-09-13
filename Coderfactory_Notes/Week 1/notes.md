@@ -2,8 +2,8 @@
 
 Redwolf consulting.
 
-  var colour = "red"
+```  var colour = "red"
   var colour = "orange"
-  puts colour
+  puts colour ```
 
 * Signed up to Github, Codepen, Slack, meetup, heroku
