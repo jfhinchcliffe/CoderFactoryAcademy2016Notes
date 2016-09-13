@@ -1,7 +1,9 @@
-## Week 1
-### 12 September 2016
+## Recruiters
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
+Redwolf consulting.
+
+  var colour = "red"
+  var colour = "orange"
+  puts colour
+
+* Signed up to Github, Codepen, Slack, meetup, heroku
