@@ -36,3 +36,5 @@ Analysis, understanding, design, building, testing (debugging), implementation
 Ruby created to be more fun that FORTRAN, BASIC etc.
 
 Use IRB in the console to run through Ruby basics.
+
+Strings can be concatenated together using '+', however this won't work with numbers. Put variables in between #{NUMHERE} to put number types within a string"
