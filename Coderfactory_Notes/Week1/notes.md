@@ -20,3 +20,19 @@ Redwolf consulting.
 * rm <directory name> - delete directory
 * rm -rf <directory name> - delete directory and all files in the folder
 * cp <filename> <new name for filename> - copy file
+
+## Setting up Rails on Mac
+
+* https://github.com/TheCoderFactory/rails-setup-for-mac
+
+## MyEd
+
+Going through a bunch of computer trivia.
+
+## Programming fundamentals with Ruby
+
+Analysis, understanding, design, building, testing (debugging), implementation
+
+Ruby created to be more fun that FORTRAN, BASIC etc.
+
+Use IRB in the console to run through Ruby basics.
