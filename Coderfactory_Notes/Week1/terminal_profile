@@ -1,6 +1,6 @@
 A theme to make your terminal a bit more readable
 (from here: http://hathaway.cc/post/69201163472/how-to-edit-your-path-environment-variables-on-mac)
-Step 1: Open your .profile with the command: atom ~ ~/.bash_profile
+Step 1: Open your .profile with the command: atom ~/.bash_profile
 Step 2: Copy and paste the text below into the file.
 Step 3: Save in Atom. Quit terminal. Reopen terminal and the new changes should be applied.
 

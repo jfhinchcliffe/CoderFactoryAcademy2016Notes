@@ -1,5 +1,6 @@
 def hello(name)
-  puts "Hello " + name
+  "Hello " + name
 end
 
-hello('jason')
+result = hello('jason')
+puts result
