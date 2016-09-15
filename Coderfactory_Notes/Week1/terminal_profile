@@ -1,0 +1,22 @@
+A theme to make your terminal a bit more readable
+(from here: http://hathaway.cc/post/69201163472/how-to-edit-your-path-environment-variables-on-mac)
+Step 1: Open your .profile with the command: atom ~ ~/.bash_profile
+Step 2: Copy and paste the text below into the file.
+Step 3: Save in Atom. Quit terminal. Reopen terminal and the new changes should be applied.
+
+
+
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Tell ls to be colourful
+export CLICOLOR=1
+export LSCOLORS=Exfxcxdxbxegedabagacad
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'
+
+export TERM="xterm-color"
+PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\W\[\e[0m\]\$ '
+
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin

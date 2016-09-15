@@ -67,3 +67,6 @@ read -- Reads the contents of the file. You can assign the result to a variable.
 readline -- Reads just one line of a text file.
 truncate -- Empties the file. Watch out if you care about the file.
 write('stuff') -- Writes "stuff" to the file.
+
+ARGV is a hash which contains all the arguments that are being passed into a file / method.
+You can get the first argument by calling for ARGV.first (eg. filename = ARGV.first )
