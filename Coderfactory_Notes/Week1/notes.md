@@ -90,4 +90,6 @@ Create a function checklist for later exercises. Write these checks on an index 
 * Did you put the ( character after the name to run it?
 * Did you put the values you want into the parenthesis separated by commas?
 * Did you end the function call with a ) character?
-* Functions that don't have parameters do not need the () after them, but would it be clearer if * you wrote them anyway?
+* Functions that don't have parameters do not need the () after them, but would it be clearer if  you wrote them anyway?
+
+## In a way, the arguments to a function are kind of like our = character when we make a variable. In fact, if you can use = to name something, you can usually pass it to a function as an argument.
