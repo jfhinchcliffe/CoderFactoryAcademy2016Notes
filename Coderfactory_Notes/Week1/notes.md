@@ -93,3 +93,7 @@ Create a function checklist for later exercises. Write these checks on an index 
 * Functions that don't have parameters do not need the () after them, but would it be clearer if  you wrote them anyway?
 
 ## In a way, the arguments to a function are kind of like our = character when we make a variable. In fact, if you can use = to name something, you can usually pass it to a function as an argument.
+
+Sorting information:
+https://gist.github.com/aspyct/3433278
+http://stackoverflow.com/questions/21121075/how-do-i-write-a-merge-sort
