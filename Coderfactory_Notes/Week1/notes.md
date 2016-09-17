@@ -97,3 +97,12 @@ Create a function checklist for later exercises. Write these checks on an index 
 Sorting information:
 https://gist.github.com/aspyct/3433278
 http://stackoverflow.com/questions/21121075/how-do-i-write-a-merge-sort
+
+Inheritance
+https://launchschool.com/books/oo_ruby/read/inheritance
+
+Programs to check:
+https://github.com/piscolomo/ruby-patterns
+
+Reading material:
+https://github.com/training-mode/ruby/tree/master/intro/05_functions  
