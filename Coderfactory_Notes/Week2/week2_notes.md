@@ -99,4 +99,18 @@ This equals FALSE (TRUE AND FALSE == FALSE)
 ## If / Elsif / else
 escape_bear = "I try to open the door"
 if escape_bear.downcase.include? "door" checks if 'door' is part of the escape
-bear string and returns 'true' if so. 
+bear string and returns 'true' if so.
+
+## =~ operator
+
+The equal-tilde operator in ruby is the “match” operator.  It take an regular expression on the left hand side and the string to match on the right hand side.  The expression …
+/or/ =~ “Hello World”
+will return 7 because a match is found on index 7 of the string.  index starts at 0.
+The expression
+/abc/ =~ “Hello World”
+will return nil because there is no match.
+
+##keywords and data types
+
+|keyword|description|example|
+|begin|run this when the script start|begin {puts 'hi'}
