@@ -112,5 +112,8 @@ will return nil because there is no match.
 
 ##keywords and data types
 
-|keyword|description|example|
-|begin|run this when the script start|begin {puts 'hi'}
+[From Learn Ruby the Hard Way](https://learnrubythehardway.org/book/ex37.html)
+
+##Hashes
+
+[Ex39 is a great explanation of Hashes](https://learnrubythehardway.org/book/ex39.html)
