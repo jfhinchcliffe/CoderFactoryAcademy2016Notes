@@ -5,9 +5,8 @@ customers = [
 ]
 
 customers.each do |customer|
-  customer.each_with_index do |(k, v),i|
+  customer.each do |k, v|
     puts "#{k}: #{v}"
-    puts "INDEX: #{i}"
   end
   puts "=" * 15
 end
