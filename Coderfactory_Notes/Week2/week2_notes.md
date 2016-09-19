@@ -108,7 +108,7 @@ The equal-tilde operator in ruby is the “match” operator.  It take an regula
 will return 7 because a match is found on index 7 of the string.  index starts at 0.
 The expression
 /abc/ =~ “Hello World”
-will return nil because there is no match.
+will return nil because there is no match (doesn't contain a, b or c).
 
 ##keywords and data types
 
@@ -117,3 +117,20 @@ will return nil because there is no match.
 ##Hashes
 
 [Ex39 is a great explanation of Hashes](https://learnrubythehardway.org/book/ex39.html)
+
+# OOP Lesson - Classes and Objects
+## Monday 19 Sep
+ A class is a 'type' of thing.
+ An object is one of these 'things'.
+ We create an object and assign it to a variable so that we can work with it.
+ Eg. ```Pikachu = Pokemon.new(name: "Pika", size: "L", power: 10)```
+
+ You can use other clases to build out your base class (parent and child)
+ Super can call the same method from the parent class (ie. initialize)
+
+ ## PROTIP
+ Highlight a variable, press command D and it will highlight other variables of the same name.
+
+You can inherit all the way up to the base class
+
+##Unit testing
