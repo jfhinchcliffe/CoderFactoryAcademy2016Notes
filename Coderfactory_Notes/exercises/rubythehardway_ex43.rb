@@ -1,20 +1,30 @@
 class Game
-  #extend Scene
+  #Start by calling var = Game.new("MyName")
+
   attr_reader :name, :location
 
   def initialize(name)
     @name = name
     @location = Location.new
-    #menu
+    menu
   end
 
-  # def menu
-  #   puts "Welcome! You're currently on a 5 x 5 table"
-  #   puts "You can move... but not off the edge of the table"
-  #   puts "press N, S, E or W to move"
-  #   option = $stdin.gets.chomp
-  #   @location.move(option)
-  # end
+  def menu
+    puts "Welcome #{@name}!"
+    puts "Close your eyes and imagine you're on a 5 x 5 tabletop"
+    puts "You can move... but not off the edge of the table"
+    puts "You're currently at location #{@location.coordinates} - the X on the board representation below"
+    puts "N is up, S is down, W is left, E is right"
+    puts
+    @location.board_state(@location.coordinates)
+    option = ""
+    while option != "X"
+      puts "press N, S, E or W to move, or X to exit"
+      option = $stdin.gets.chomp.upcase
+      @location.move(option)
+    end
+  end
+
 end
 
 class Location
@@ -23,8 +33,6 @@ class Location
 
   def initialize
     @coordinates = [1,1]
-    puts "Initial Board State:"
-    #board_state(@coordinates)
   end
 
   def move(direction)
@@ -36,6 +44,8 @@ class Location
       @coordinates[1] += 1
     elsif direction == "W"
       @coordinates[1] -= 1
+    elsif direction == "X"
+      exit(0)
     else
       puts "Can't understand your instruction"
     end
@@ -50,7 +60,7 @@ class Location
     puts "You ran off the edge of the board!"
     exit(0)
   end
-
+  #Displays a graphical representation of the board
   def board_state(coordinates)
     board_coordinates = [{y: 5, x: 1}, {y: 5, x: 2}, {y: 5, x: 3}, {y: 5, x: 4}, {y: 5, x: 5},
                         {y: 4, x: 1}, {y: 4, x: 2}, {y: 4, x: 3}, {y: 4, x: 4}, {y: 4, x: 5},
@@ -75,15 +85,17 @@ class Location
 
 end
 
-game = Game.new("Jason")
-puts game.name
-puts game.location.coordinates
-puts game.location.move("N")
-puts game.location.move("N")
-puts game.location.move("S")
-puts game.location.move("S")
-puts game.location.move("E")
-puts game.location.move("E")
-puts game.location.move("E")
-puts game.location.move("E")
-puts game.location.move("E")
+puts "Welcome! Please enter your name:"
+name = $stdin.gets.chomp
+game = Game.new(name)
+# puts game.name
+# puts game.location.coordinates
+# puts game.location.move("N")
+# puts game.location.move("N")
+# puts game.location.move("S")
+# puts game.location.move("S")
+# puts game.location.move("E")
+# puts game.location.move("E")
+# puts game.location.move("E")
+# puts game.location.move("E")
+# puts game.location.move("E")
