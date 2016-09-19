@@ -133,4 +133,38 @@ will return nil because there is no match (doesn't contain a, b or c).
 
 You can inherit all the way up to the base class
 
-##Unit testing
+##Requiring
+
+require "./mystuff.rb"
+
+MyStuff.apple()
+This allows us to print a variable that's in a required module. In this case, tangerine
+puts MyStuff::TANGERINE
+
+##attr_accessor
+calling attr_accessor means that you can access the attribute of the instance.
+For example,
+
+'''
+def initialize(lyrics)
+  @lyrics = lyrics
+end
+
+attr_accessor :lyrics
+'''
+
+means that I can perform:
+'''
+happy_birthday = Song.new("LYRICS")
+and then call
+happy_birthday.lyrics
+
+
+##Top down development
+
+Take a small piece of the problem; hack on some code and get it to run barely.
+Refine the code into something more formal with classes and automated tests.
+Extract the key concepts you're using and try to find research for them.
+Write a description of what's really going on.
+Go back and refine the code, possibly throwing it out and starting over.
+Repeat, moving on to some other piece of the problem.
