@@ -49,7 +49,7 @@ class Location
     else
       puts "Can't understand your instruction"
     end
-
+    #end game if
     explode if @coordinates[0] < 1 || @coordinates[0] > 5 || @coordinates[1] < 1 || @coordinates[1] > 5
 
     board_state(@coordinates)
@@ -62,6 +62,8 @@ class Location
   end
   #Displays a graphical representation of the board
   def board_state(coordinates)
+    #Nested hashes with board locations
+    #ToDo: Look at creating this automatically based on user requested board size
     board_coordinates = [{y: 5, x: 1}, {y: 5, x: 2}, {y: 5, x: 3}, {y: 5, x: 4}, {y: 5, x: 5},
                         {y: 4, x: 1}, {y: 4, x: 2}, {y: 4, x: 3}, {y: 4, x: 4}, {y: 4, x: 5},
                         {y: 3, x: 1}, {y: 3, x: 2}, {y: 3, x: 3}, {y: 3, x: 4}, {y: 3, x: 5},
@@ -69,6 +71,8 @@ class Location
                         {y: 1, x: 1}, {y: 1, x: 2}, {y: 1, x: 3}, {y: 1, x: 4}, {y: 1, x: 5}]
     current_board = ""
     board_coordinates.each do |square|
+      #if the square matches the coordinates array, add an X for the location of robot.
+      #or else add a O to show that no robot is is in that location.
       if square[:y] == coordinates[0] && square[:x] == coordinates[1]
         current_board << "X"
       else
@@ -79,7 +83,8 @@ class Location
         current_board = ""
       end
     end
-
+    puts
+    puts "Current Coordinates: #{coordinates}"
     puts current_board
   end
 
@@ -88,14 +93,3 @@ end
 puts "Welcome! Please enter your name:"
 name = $stdin.gets.chomp
 game = Game.new(name)
-# puts game.name
-# puts game.location.coordinates
-# puts game.location.move("N")
-# puts game.location.move("N")
-# puts game.location.move("S")
-# puts game.location.move("S")
-# puts game.location.move("E")
-# puts game.location.move("E")
-# puts game.location.move("E")
-# puts game.location.move("E")
-# puts game.location.move("E")
