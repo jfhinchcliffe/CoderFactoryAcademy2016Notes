@@ -1,4 +1,7 @@
+
 class Customer
+
+  attr_accessor
 
   def initialize(first_name, last_name)
     @first_name = first_name
@@ -11,10 +14,6 @@ class Customer
 
   def get_full_name_upper
     return "#{@first_name} #{@last_name}".upcase
-  end
-
-  def get_full_name_lower
-    return "#{@first_name} #{@last_name}".downcase
   end
 
 end

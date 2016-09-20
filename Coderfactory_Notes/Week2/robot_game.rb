@@ -6,7 +6,6 @@ class Game
   def initialize(name)
     @name = name
     @location = Location.new
-    menu
   end
 
   def menu
@@ -90,6 +89,7 @@ class Location
 
 end
 
-puts "Welcome! Please enter your name:"
-name = $stdin.gets.chomp
-game = Game.new(name)
+# puts "Welcome! Please enter your name:"
+# name = $stdin.gets.chomp
+# game = Game.new(name)
+# game.menu

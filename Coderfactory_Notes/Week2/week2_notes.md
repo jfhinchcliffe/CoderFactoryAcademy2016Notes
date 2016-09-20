@@ -168,3 +168,68 @@ Extract the key concepts you're using and try to find research for them.
 Write a description of what's really going on.
 Go back and refine the code, possibly throwing it out and starting over.
 Repeat, moving on to some other piece of the problem.
+
+## Resources
+
+http://www.rubyinside.com/media/poignant-guide.pdf
+
+http://poignant.guide/book/chapter-1.html
+
+If you are finding parts of Ruby hard to sink in, this is a quirky yet engaging place to learn! http://poignant.guide/book/chapter-3.html
+
+##Test Driven development
+
+Class unit tests and TDD
+
+Workflow -
+we write the test before the code is written
+write the code
+make the test pass
+
+Red / Green / Refactor
+
+## Getters and Setters
+
+attr_accessor
+
+## AboutArrays
+
+accessing arrays. If you have an array
+array = [:peanut, :butter, :and, :jelly]
+
+and pass in array[2,2]
+the first 2 says where you should start grabbing values (position 2),and then
+the second 2 says how many more values you should traverse.
+
+##Parallel Assignment
+Assigning values from an array on the one line.
+```
+def test_parallel_assignments
+  first_name, last_name = ["John", "Smith"]
+  assert_equal "John", first_name
+  assert_equal "Smith", last_name
+end
+```
+Using the splat value to assign remaining values from an array to one variable
+```
+def test_parallel_assignments_with_splat_operator
+  first_name, *last_name = ["John", "Smith", "III"]
+  assert_equal "John", first_name
+  assert_equal ["Smith","III"], last_name
+end
+```
+Parallel assignment with only one variable
+```
+def test_parallel_assignment_with_one_variable
+  first_name, = ["John", "Smith"]
+  assert_equal "John", first_name
+end
+```
+Getting substrings
+```
+def test_you_can_get_a_substring_from_a_string
+  string = "Bacon, lettuce and tomato"
+  assert_equal "let", string[7,3] #starts from position 7, and takes 3.
+  assert_equal "let", string[7..9] #starts from position 7 and takes until position 7
+end
+```
