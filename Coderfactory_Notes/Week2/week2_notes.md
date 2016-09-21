@@ -331,3 +331,19 @@ def test_inject_will_blow_your_mind
 
   result = [2, 3, 4].inject([]) { |sum, item| sum << item * 2 }
 ```
+
+##Inheritance
+You can super up to the parent class to grab a string from a method, and
+even interpolate if you want!
+```
+class BullDog < Dog
+  def bark
+    super + ", GROWL"
+  end
+end
+
+def test_subclasses_can_invoke_parent_behavior_via_super
+  ralph = BullDog.new("Ralph")
+  assert_equal "WOOF, GROWL", ralph.bark
+end
+```
