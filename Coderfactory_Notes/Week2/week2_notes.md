@@ -233,3 +233,24 @@ def test_you_can_get_a_substring_from_a_string
   assert_equal "let", string[7..9] #starts from position 7 and takes until position 7
 end
 ```
+
+##Go back through Ruby Koans
+Check:
+* About Strings
+* About Hashes
+* About Arrays
+* About Regular Expressions - particularly find and replace
+
+##Opening / Creating / Working with files in Ruby
+
+r = read only
+w = create an empty file for wrtiting
+a = append to filer + open a file for reading and wrtiting
+w+ = create an empty file for reading and writing if one doesn't exist.
+
+File.new
+File.read
+File.open
+File.write
+File.close
+File.rewind
