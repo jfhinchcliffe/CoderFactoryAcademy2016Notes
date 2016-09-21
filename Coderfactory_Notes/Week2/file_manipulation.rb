@@ -32,7 +32,7 @@ def show_dir
 end
 
 def read_file
-  begin
+  #begin
     text = open_file("read")
     page_break
     print text.read
@@ -41,7 +41,7 @@ def read_file
     rescue
     puts "File not found. Going back to main menu"
     page_break
-  end
+  #end
 
 end
 

@@ -240,6 +240,7 @@ Check:
 * About Hashes
 * About Arrays
 * About Regular Expressions - particularly find and replace
+* About Blocks
 
 ##Opening / Creating / Working with files in Ruby
 
@@ -254,3 +255,79 @@ File.open
 File.write
 File.close
 File.rewind
+
+ ## Collect and map
+
+Collect / map takes each elemens of an awway, can perform something on them
+and then you can return the transformed array. In the examples below,
+it adds 10 to each element.
+
+```
+ def test_collect_transforms_elements_of_an_array
+   array = [1, 2, 3]
+   new_array = array.collect { |item| item + 10 }
+   assert_equal [11,12,13], new_array
+
+   # NOTE: 'map' is another name for the 'collect' operation
+   another_array = array.map { |item| item + 10 }
+   assert_equal [11,12,13], another_array
+ end
+ ```
+select where items within an array match a condition (eval to 'true')
+ ```
+ def test_select_selects_certain_items_from_an_array
+   array = [1, 2, 3, 4, 5, 6]
+
+   even_numbers = array.select { |item| (item % 2) == 0 }
+   assert_equal __, even_numbers
+
+   # NOTE: 'find_all' is another name for the 'select' operation
+   more_even_numbers = array.find_all { |item| (item % 2) == 0 }
+   assert_equal __, more_even_numbers
+ end
+ ```
+ Pass a criteria in and find will return the first matching criteria
+```
+ def test_find_locates_the_first_element_matching_a_criteria
+   array = ["Jim", "Bill", "Clarence", "Doug", "Eli"]
+
+   assert_equal "Clarence", array.find { |item| item.size > 4 }
+ end
+ ```
+##Presentation - Bron Thulke
+(Twitter)[https://twitter.com/_bron_]
+* worked in ASP.net for years
+* Went Freelance afterwards
+* Currently works for herself
+
+Did the initial big biz experience prove valuable for working at
+smaller places in the future?
+started n big biz (Logica), moved to small
+
+Freelance show
+This Developer's Life
+Pluralsite
+DDD Melbourne (conference)
+Clean COde - Martin Fowler
+Writing Good Code - Microsoft
+Away from the Keyboard (podcast)
+The Hello World Podcast
+
+##Holy shit, inject!
+Inject provides a value that you can edit throughout iteration.
+In the examples below, the first variable that's within the block
+will be returned at the end. Can be modified.
+Can also pass a new Array to hold the results (below)
+```
+def test_inject_will_blow_your_mind
+  result = [2, 3, 4].inject(0) { |sum, item| sum + item }
+  assert_equal 9, result
+
+  result2 = [2, 3, 4].inject(1) { |product, item| product * item }
+  assert_equal 24, result2
+  # 1 * 2 = 2
+  # 2 * 3 = 6
+  # 6 * 4 = 24
+
+  result = [2, 3, 4].inject([]) { |sum, item| sum << item * 2 }
+```
