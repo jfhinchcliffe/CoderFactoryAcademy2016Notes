@@ -233,7 +233,8 @@ def test_you_can_get_a_substring_from_a_string
   assert_equal "let", string[7..9] #starts from position 7 and takes until position 7
 end
 ```
-
+## Read up on
+Default values in Arrays
 ##Go back through Ruby Koans
 Check:
 * About Strings
@@ -241,6 +242,7 @@ Check:
 * About Arrays
 * About Regular Expressions - particularly find and replace
 * About Blocks
+## REREAD ABOUT PROXY OBJECTS. DIDN'T GET THIS AT _ALL_
 
 ##Opening / Creating / Working with files in Ruby
 
@@ -368,3 +370,28 @@ until exit do
   end
 end      
 ```
+
+##Koans Stuff
+Test classes and instances don't share instance variables.
+```
+class Dog
+  attr_accessor :name
+end
+
+def Dog.name
+  @name
+end
+
+def test_classes_and_instances_do_not_share_instance_variables
+  fido = Dog.new
+  fido.name = "Fido"
+  assert_equal "Fido", fido.name
+  assert_equal nil, Dog.name
+end
+```
+
+
+##William Tio - Guest Speaker
+Questions
+Tips for beginner programs - what have you found useful?
+Concentrate on one at a time
