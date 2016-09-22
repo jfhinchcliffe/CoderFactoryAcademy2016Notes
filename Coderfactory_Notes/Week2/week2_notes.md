@@ -235,13 +235,14 @@ end
 ```
 ## Read up on
 Default values in Arrays
-##Go back through Ruby Koans
+##Go back through Ruby Koans / Ruby the Hard Way.
 Check:
 * About Strings
 * About Hashes
 * About Arrays
 * About Regular Expressions - particularly find and replace
 * About Blocks
+* https://learnrubythehardway.org/book/ex44.html
 ## REREAD ABOUT PROXY OBJECTS. DIDN'T GET THIS AT _ALL_
 
 ##Opening / Creating / Working with files in Ruby
@@ -392,6 +393,16 @@ end
 
 
 ##William Tio - Guest Speaker
-Questions
-Tips for beginner programs - what have you found useful?
-Concentrate on one at a time
+Explained front and back end developers.
+Encouraged people starting to code to keep going!
+
+## Ruby the Hard Way - ex44 - Inheritance and Mixins
+
+Ruby has another way to do composition using modules and a concept called mixins. You simply create a module with functions that are common to classes and then include them in your class similar to using a require.
+
+Recheck this - interesting stuff on inheritance, modules etc:
+https://learnrubythehardway.org/book/ex44.html
+
+* Avoid something called "meta-programming" at all costs, as it is too complex to be useful reliably. If you're stuck with it, then be prepared to know the class hierarchy and spend time determining where everything is coming from.
+* Use composition to package up code into modules that are used in many different unrelated places and situations.
+* Use inheritance only when there are clearly related reusable pieces of code that fit under a single common concept or if you have to because of something you're using.
