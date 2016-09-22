@@ -347,3 +347,24 @@ def test_subclasses_can_invoke_parent_behavior_via_super
   assert_equal "WOOF, GROWL", ralph.bark
 end
 ```
+
+## Thursday lecture - Menus in terminal
+Use Case statements (also called Switch in other languages)
+```
+exit = false
+until exit do
+  command = $stdin.gets.chomp
+  case command
+    when "1"
+      puts "One!"
+    when "2"
+      puts "Two"
+    when "3"
+      puts "Three"
+    when "Exit"
+      exit = true
+    else
+      "Nahh"
+  end
+end      
+```
