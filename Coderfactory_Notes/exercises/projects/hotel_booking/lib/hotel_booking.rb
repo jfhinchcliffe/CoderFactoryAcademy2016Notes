@@ -1,6 +1,5 @@
-
 require './hotel'
-require 'csv'
+
 class HotelBooking
 
   attr_reader :customer, :arrival_date, :departure_date, :hotel
@@ -12,36 +11,24 @@ class HotelBooking
 
   end
 
-  def find_hotels
-
-    CSV.foreach("hotels.csv") do |row|
-      puts "Name: #{row[0]} "
-      print "Address: #{row[1]} "
-      print "Rooms: #{row[2].to_i} "
-      print "Cost: #{row[3].to_i} "
-      # use row here...
-    end
-
-  end
-
-  def add_hotel
-    name = "JH"
-    address = "Lavington NSW"
-    rooms = "3"
-    cost = "123"
-    CSV.open("hotels.csv", "a+") do |file|
-      file << ["#{name}", "#{address}", "#{rooms}", "#{cost}"]
-    end
-  end
 end
 
-p = {name: "Pedro", arriving: "27 7 2016", departing: "29 7 2016"}
-booking = HotelBooking.new(p)
-puts booking.customer
-puts booking.hotel.arriving
-puts booking.hotel.departing
-puts booking.hotel.name
-puts booking.hotel.find_room
-puts booking.find_hotels
-booking.add_hotel
-puts booking.find_hotels
+# p = {name: "Pedro", arriving: "27 7 2016", departing: "29 7 2016"}
+# booking = HotelBooking.new(p)
+# puts "1"
+# puts booking.customer
+# puts "2"
+# puts booking.hotel.arriving
+# puts "3"
+# puts booking.hotel.departing
+# puts "4"
+# puts booking.hotel.name
+# puts "5"
+# puts booking.hotel.find_room
+# puts "6"
+# puts booking.hotel.list_hotels
+# puts "7"
+# new_hotel_value = {name: "Stank Hotel", address: "Vancouver", total_rooms: 13, rooms_taken: 0, cost: 50}
+# puts booking.hotel.add_hotel(new_hotel_value)
+# puts "8"
+# puts booking.hotel.list_hotels
