@@ -143,6 +143,13 @@ value ||= 8
 If value isn't already created, then create a new one and set it to 8.
 
 Using the yield function
+
+Working with JSON in Ruby
+https://hackhands.com/ruby-read-json-file-hash/
+
+RSPEC basics
+https://semaphoreci.com/community/tutorials/getting-started-with-rspec
+
 ```
 require 'csv'
 
