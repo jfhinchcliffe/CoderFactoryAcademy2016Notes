@@ -15,6 +15,8 @@ EG. img can have src key, and /images/cat.jpg attribute <img src='images/cat.jpg
 
 Use the Chrome Developer Tools (inspect) to adjust colours within the browser.
 
+### Ensure you put <meta charset="utf-8"> in the HTML head
+
 use a hash for ID's,
 use a . for classes
 
@@ -103,4 +105,25 @@ Get the most constrained design first and move on up to larger sizes.
 ### Future CSS
 
 Continually evolving. When developing, bear in mind minimum browser requirements. eg, IE9.
-Check caniuse.com to see if IE supports CSS animation 
+Check www.caniuse.com to see if IE supports CSS animation
+
+### Progressive enhancement
+
+Designed in a way that if there is a feature that isn't available, it just won't display.
+
+
+CSS Syntax
+who{ what: how;}
+
+at the top of a CSS file, you might have global styles:
+
+```
+* {
+  global: styles;
+  go: here;
+}
+```
+
+in css, cursor: pointer; gives you a little hand when mousing over the element.
+ line-height: 88
+ this num can be set to center text within a div.
