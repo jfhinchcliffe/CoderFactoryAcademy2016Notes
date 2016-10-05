@@ -133,3 +133,11 @@ in css, cursor: pointer; gives you a little hand when mousing over the element.
  Bootstrap gives you a bunch for awesome styles to get your projects up and running quickly.
 
 Adjusts columns to small, medium or large  screen sizes.
+
+In the rows / columns, it adds padding etc. so items don't butt up against one another
+
+Declare 2 classesin columns to accommodate small screenseg div class="col-xs-12 col-md-3">
+
+CSS EM gets the size from the parent, REM gets it from the current.
+
+Patrick's recreation of a button from CodePen: http://codepen.io/burntcaramel/pen/NRXPqy?editors=1100

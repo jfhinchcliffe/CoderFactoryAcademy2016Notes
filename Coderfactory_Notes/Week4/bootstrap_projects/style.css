@@ -9,3 +9,41 @@
   color: white;
   text-align: center;
 }
+
+.wide-pic {
+  text-align: center;
+  size: cover;
+  position: center;
+  background-size: cover;
+  vertical-align: middle;
+  background-color: green;
+  width: 100%;
+  height: 50%;
+  background-image: url("https://hd.unsplash.com/photo-1433588641602-7c1083c4f0e2");
+}
+
+.pic {
+  padding: 30px;
+  color: white;
+}
+
+.nav-pills > li.active > a {
+  background-color: #ee7722;
+}
+
+.nav-pills > li > a {
+  color: #ee7722;
+}
+
+a {
+  color: green;
+}
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('http://getmdl.io/assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
