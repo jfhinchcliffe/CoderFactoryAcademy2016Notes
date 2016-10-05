@@ -127,3 +127,9 @@ at the top of a CSS file, you might have global styles:
 in css, cursor: pointer; gives you a little hand when mousing over the element.
  line-height: 88
  this num can be set to center text within a div.
+
+ ## Bootstrap
+
+ Bootstrap gives you a bunch for awesome styles to get your projects up and running quickly.
+
+Adjusts columns to small, medium or large  screen sizes.
