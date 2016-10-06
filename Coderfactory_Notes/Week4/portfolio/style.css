@@ -1,0 +1,167 @@
+
+body {
+  margin: 0;
+  background-color: #9bd3d6;
+  font-family: 'Slabo 27px', serif;
+  font-size: 21px;
+}
+header {
+  background-color: red;
+  background-image: url("http://i.imgur.com/NmI3q8D.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-button {
+  color: rgba(255,255,255,0.5);
+  animation-name: nav-button;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  bottom: 7em;
+}
+
+@keyframes nav-button {
+    0%   {color: rgba(255,255,255,0.4);
+          bottom: 6em;}
+}
+
+.header.bottom-strip {
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+}
+
+.social-button {
+/*   float: left; */
+  display: inline;
+/*   width: 10%; */
+  padding: .5em;
+  margin-bottom: 1em;
+  color: #ff4455;
+}
+
+project-box {
+  background-color: red;
+  size: cover;
+  height: 50vh;
+}
+
+.project{
+  width: 90%;
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+  margin: auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  background-color: rgba(255,255,255,0.5);
+/*   position: absolute; */
+/*   bottom: 0; */
+  text-align: center;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.contact.social-button {
+  color: blue;
+}
+
+.heading {
+  position: absolute;
+  top: 2em;
+}
+
+p.personal-info {
+  background: #cc6655;
+  padding: 1em;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+main-content {
+  margin: 1em;
+}
+h2 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+     /* input desktop only styles below here */
+    body {
+
+      }
+      button.accordion {
+        background-color: #eee;
+        display: inline-block;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 45%;
+        text-align: left;
+        margin: 1em;
+      }
+      div.panel {
+        padding: 0 18px;
+        background-color: white;
+        width: 40%;
+/*         max-height: 100%; */
+        overflow: visible;
+      }
+      .project{
+        width: 90%;
+        border: 1px solid black;
+        padding: 1em;
+        margin: 1em;
+        margin: auto;
+      }
+
+    }
