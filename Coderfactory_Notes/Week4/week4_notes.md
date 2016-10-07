@@ -141,3 +141,8 @@ Declare 2 classesin columns to accommodate small screenseg div class="col-xs-12 
 CSS EM gets the size from the parent, REM gets it from the current.
 
 Patrick's recreation of a button from CodePen: http://codepen.io/burntcaramel/pen/NRXPqy?editors=1100
+
+## Rehashing Ruby
+
+When looking at a problem, isolate the nouns and see if they are your classes.
+For instance, an app cataloguing movies that allows users to enter, sort and view movies. User and Movie would possibly be the 2 classes.
