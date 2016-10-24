@@ -1,0 +1,10 @@
+<%= render partial: 'contact_details/form', locals: {contact_detail: @contact_detail} %>
+
+<h3>Contact Information</h3>
+<p><span class="icon icon-home"></span> <%= @contact_detail.address %><br/>
+  <span class="icon icon-phone"></span> <%= @contact_detail.phone %> <br/>
+  <span class="icon icon-envelop"></span> <%= @contact_detail.email %> <br/>
+  <span class="icon icon-twitter"></span> <%= @contact_detail.twitter %> <br/>
+  <span class="icon icon-facebook"></span> <%= @contact_detail.facebook %> <br/>
+  <span class="icon icon-facebook"></span> <%= @contact_detail.url %> <br/>
+</p>

@@ -1,0 +1,72 @@
+.navbar {
+  margin-bottom: 0;
+}
+
+.top-header {
+  position: relative;
+  background-color: #2C3E50;
+  height: 50vh;
+  background-image: url("../images/city-at-night.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.top-text.container {
+  color: #e2c00c;
+  text-shadow: 2px 2px black;
+}
+
+.btn-group-head {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-right: 1em;
+}
+
+.pic-div {
+  padding-top: 1em;
+  text-align: center;
+
+}
+
+.mugshot {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: .5em;
+}
+
+.btn-group-head ul {
+}
+
+.btn-group-head li {
+  float: right;
+}
+
+.btn-group-head a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.text-content {
+  background-color: #3498DB;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/city-at-night.jpeg");
+
+  /* Set a specific height */
+  height:50px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

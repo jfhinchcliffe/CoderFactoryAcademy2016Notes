@@ -71,3 +71,16 @@ Advice
 * Enjoy yourself
 * Don't try to learn everything
 * Soft skills are just as important as tech skills
+
+## Tom Adams Tips
+
+Here is his top 5 tips and summary he sent me through email yesterday;
+1. Learn a typed, functional language. Even if you don't use it day to day, it will make the most difference to your code. And it's where the industry is headed. Learn SCALA, ELM, PHOENIX, ELIXIR, HASKELL
+2. Everything in engineering is a tradeoff. There are no "best practices", you need to become adept at choosing when to use what practices.
+3. Choose your work by what you will learn. Don't be afraid to take a pay cut (if you can afford it) to learn something. I was lucky enough to have with first job set me up with a great start (Linux and open source at that time).
+4. Everything is contextual. I don't work on safety critical systems. The worst we might do is refund someone, no one dies. Your practices should reflect the industry you're in.
+5. Get involved in your community. Go to Meetups. You will find more work and opportunities through word of mouth than any other way.
+
+## Github Pages
+
+GitHub Desktop is available if you don't want to use git from the command line.
