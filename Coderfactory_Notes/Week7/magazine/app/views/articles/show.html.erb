@@ -1,0 +1,12 @@
+<h1>Show</h1>
+<strong>Title:</strong>
+<%= @article.title %>
+<strong>Content</strong>
+<%= @article.content %>
+<strong>Params</strong>
+<% @toenail.each do |p, v| %>
+  <p>
+    Key: <%= p %>
+    Value: <%= v %>
+  </p>
+<% end %>
