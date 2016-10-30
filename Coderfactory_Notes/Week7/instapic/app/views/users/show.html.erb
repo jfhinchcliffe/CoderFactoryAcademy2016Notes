@@ -1,0 +1,13 @@
+<h1>User Page</h1>
+<%= @user.email %>
+<%= @user.password_hash %>
+
+<% @params.each do |k, v| %>
+  <p>
+    <%= k %>
+    <%= v %>
+  </p>
+<% end %>
+
+<%= link_to "New Profile", new_user_profile_path(@user) %>
+<%= link_to "Profiles", user_profiles_path(@user) %>

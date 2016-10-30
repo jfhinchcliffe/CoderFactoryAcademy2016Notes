@@ -13,10 +13,10 @@ alice = User.create(email: 'alice@example.com', password_hash: '234534563')
 susan_profile = Profile.create(first_name: 'Susan', last_name: 'Boyle', phone: '55555', user: susan)
 bob_profile = Profile.create(first_name: 'Bob', last_name: 'Boyle', phone: '55555', user: bob)
 
-photo1 = Photo.create(description: 'Doge', asset_url: 'https://images.unsplash.com/photo-1453365607868-7deed8cc7d26?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=568&h=379&q=80&cs=tinysrgb', user: susan)
-photo2 = Photo.create(description: 'Rex', asset_url: 'https://images.unsplash.com/photo-1453487977089-77350a275ec5?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=568&h=378&q=80&cs=tinysrgb', user: susan)
-photo3 = Photo.create(description: 'Bulldog', asset_url: 'https://images.unsplash.com/photo-1456534231849-7d5fcd82d77b?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=568&h=321&q=80&cs=tinysrgb', user: susan)
-photo4 = Photo.create(description: 'Park Warrior', asset_url: 'https://images.unsplash.com/photo-1443750200537-00fd518bdc82?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=568&h=379&q=80&cs=tinysrgb', user: bob)
+photo1 = Photo.create(description: 'Doge', asset_url: 'https://images.unsplash.com/photo-1453365607868-7deed8cc7d26?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=200&h=200&q=80&cs=tinysrgb', user: susan)
+photo2 = Photo.create(description: 'Rex', asset_url: 'https://images.unsplash.com/photo-1453487977089-77350a275ec5?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=200&h=200&q=80&cs=tinysrgb', user: susan)
+photo3 = Photo.create(description: 'Bulldog', asset_url: 'https://images.unsplash.com/photo-1456534231849-7d5fcd82d77b?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=200&h=200&q=80&cs=tinysrgb', user: susan)
+photo4 = Photo.create(description: 'Park Warrior', asset_url: 'https://images.unsplash.com/photo-1443750200537-00fd518bdc82?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=200&h=200&q=80&cs=tinysrgb', user: bob)
 
 # Tag Bob in photo 1
 PhotoTaggedUser.create(photo: photo1, user: bob)

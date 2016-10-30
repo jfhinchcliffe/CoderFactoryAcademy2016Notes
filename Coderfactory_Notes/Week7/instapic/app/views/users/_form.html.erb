@@ -1,0 +1,17 @@
+<%= form_for @user do |f| %>
+
+  <p>
+    <%= f.label :email %><br>
+    <%= f.email_field :email %>
+  </p>
+
+  <p>
+    <%= f.label :password_hash %><br>
+    <%= f.text_field :password_hash %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>

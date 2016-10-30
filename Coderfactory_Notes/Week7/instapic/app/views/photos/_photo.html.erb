@@ -1,0 +1,8 @@
+<p>
+  <%= image_tag photo.asset_url, height: '200' %>
+</p>
+<p>
+  <strong>Owned By: <%= photo.user.profile.first_name %></strong>
+  <br/>
+  <em>Tagged People: <%= render photo.tagged_user_relationships %></em>
+</p>
