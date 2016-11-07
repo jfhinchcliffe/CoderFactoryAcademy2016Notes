@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @total %>
+</p>
+
+<p>
+  <strong>Paid:</strong>
+  <%= @cart.paid %>
+</p>
+
+<p>
+  <strong>Items:</strong>
+  <% @cart.items.each do |item| %>
+    <p>
+      <%= item.name %>
+      <%= item.price %>
+    </p>  
+  <% end %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @cart.user.profile.first_name %>
+</p>
+
+<%= link_to 'Back', carts_path %>

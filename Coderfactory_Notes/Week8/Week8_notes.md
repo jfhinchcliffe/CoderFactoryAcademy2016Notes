@@ -80,6 +80,8 @@ Single routes
 
 `get 'profile', to: 'users#show'`
 
+
+
 ## NEsted Routes
 
 localhost/courses/3/modules/4
@@ -135,3 +137,80 @@ looks for content to insert
   <head>
     <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
   </head>`
+
+Will then look for :title and insert it into the document. 
+
+# Wednesday - Rspec testing in Rails
+
+Use Rspec to describe in plain english that when a user does something, it should be equal to this result. 
+More descriptive tests.
+
+install rspec-rails. When you use scaffold, rspec rails automatically creates test files.
+
+add the gem to the test environment in your gemfile` 
+`gem 'rspec-rails', '~> 3.5'`
+`gem 'rails-controller-testing'`
+
+bundle install 
+rails g rspec:install
+First line is a description of the model and type
+
+redirect changes URL you're visiting
+render doesn't 
+
+Use a response 200 to check if that page is rendering ok
+
+To testa  valid routes to make sure it goes to the direct controller 
+
+
+##PostMan
+
+Use this to make requests to websites / your app to check the response. 
+"https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb" pings radiohead on the spotify API, for instance
+
+## Thursday
+## Devise
+Used to allow users to sign in and sign out. 
+Authentication - proving who you are
+
+## Rolify
+Ading roles to users - eg. admin, publisher, user, 
+
+Can integrate with CanCanCan to assign roles and abilities. 
+eg. an admin might be able to update
+
+add devise, rolify and cancancan
+- create a new User model (rails g devise User)
+
+https://github.com/RolifyCommunity/rolify/wiki/Devise---CanCanCan---rolify-Tutorial
+
+https://www.learnacademy.org/days/322
+
+https://github.com/RolifyCommunity/rolify
+
+## Guest Speaker - Shannon Murdoch - UX at WebJet
+
+UX For Devs
+
+## Friday - Rails Mailers and Contact Forms
+
+Can use a mailer to automate email sends.
+
+Comment out ERB sections by putting a hash before the = symbol:
+<%= code %>
+<%#= code wont run %>
+
+Mailer views are like normal views. Use these to construct views for plain text and HTML emails.
+
+source ~/.bash_profile to reload bash after changing env variables
+
+## Presentation - Franki from Hivery
+Data science and AI
+Translate raw data into actionable insights
+
+Aspects of monolithic companies are being eaten away by tiny startups.
+
+
+
+
+

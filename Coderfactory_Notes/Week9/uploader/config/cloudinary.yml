@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hinchy
+  api_key: '961186897175297'
+  api_secret: a373QERS4mU3ESRym5DMPYeSkxw
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hinchy
+  api_key: '961186897175297'
+  api_secret: a373QERS4mU3ESRym5DMPYeSkxw
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hinchy
+  api_key: '961186897175297'
+  api_secret: a373QERS4mU3ESRym5DMPYeSkxw
+  enhance_image_tag: true
+  static_image_support: false
