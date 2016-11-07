@@ -1,0 +1,25 @@
+<% @all_products.each do |product| %>
+  <p>
+    <%= product.name%>
+    <%= image_tag(product.picture.url)%>
+  </p>
+<% end %>
+
+<%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <label class="amount">
+      <span>Amount: <%= session[:total]%></span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="<%= session[:total]*10 %>"
+          data-locale="auto"></script>
+<% end %>

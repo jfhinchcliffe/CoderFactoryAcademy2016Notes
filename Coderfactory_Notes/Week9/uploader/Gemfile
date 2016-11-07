@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'stripe'
 gem 'carrierwave'
 gem 'cloudinary'
 gem 'simple_form'

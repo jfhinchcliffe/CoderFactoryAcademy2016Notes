@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
-
+<p>
+  <%= @gift.name %><br/>
+  <%= @gift.price %>
+</p>
 <%= image_tag(@gift.picture.url) %>
+
+<%= link_to 'Add to Cart', add_to_cart_path(gift: @gift.id) %>
 
 <%= link_to 'Edit', edit_gift_path(@gift) %> |
 <%= link_to 'Back', gifts_path %>
