@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Uploader</title>
+    <title>Airstay</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,8 +9,6 @@
   </head>
 
   <body>
-  <p><%= flash[:message] if flash[:message]%></p>
-  <%= link_to 'Gifts', gifts_path %> | <%= link_to "Checkout", new_charge_path if session[:cart] %> | <%= link_to "Empty Cart", empty_cart_path %> | <%= "Total Cart Value: $#{session[:total]}" if session[:total] %>
     <%= yield %>
   </body>
 </html>

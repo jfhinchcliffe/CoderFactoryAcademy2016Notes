@@ -10,5 +10,11 @@ Keep ahead of the curve. Don't be precious. Get ready to pivot tonew languages.
 Elixir language - check out?
 Phoenix framework - check out?
 
+## Day 2
+
+## Pat building an AirBNB clone
+
+ 
+
 
 

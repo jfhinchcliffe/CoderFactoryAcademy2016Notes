@@ -5,11 +5,13 @@ def add_to_cart
   session[:cart] = [] unless session[:cart]
   session[:cart] << @gift.id
   session[:total] = get_session_price(session[:cart])
+  flash[:message] = "#{@gift.name} added to cart"
   redirect_to @gift
 end
 
 def empty_cart
   reset_session
+  flash[:message] = "Cart emptied"
   redirect_to gifts_path
 end
 
