@@ -16,4 +16,7 @@ class HomeController < ApplicationController
     @code_dec = Base64.decode64(@code_enc)
   end
 
+
+  
+
 end
