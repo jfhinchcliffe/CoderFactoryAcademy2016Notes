@@ -1,0 +1,15 @@
+<%if current_user %>
+  <h2>Welcome, <%= current_user.profile.first_name%></h2>
+<% else %>
+  <h2>Welcome User!</h2>  
+<% end %>
+
+<% if user_signed_in? %>
+  <%= current_user.profile.inspect%>
+<% end %>
+
+<%= form_tag("/check_coupon", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:code) %>
+  <%= submit_tag("Check") %>
+<% end %>

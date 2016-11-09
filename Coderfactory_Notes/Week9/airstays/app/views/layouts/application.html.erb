@@ -9,6 +9,15 @@
   </head>
 
   <body>
+    <%= flash[:message] if flash[:message] %>
+    <%= link_to 'Home', root_path %> | 
+    <% if user_signed_in? %>
+      <%= link_to 'Log Out', destroy_user_session_path, :method => :delete %> |
+      <%= link_to 'Profile', edit_profile_path(current_user.profile)%>
+    <% else %>  
+      <%= link_to('Login', new_user_session_path)  %> |
+    <% end %>  
+
     <%= yield %>
   </body>
 </html>
