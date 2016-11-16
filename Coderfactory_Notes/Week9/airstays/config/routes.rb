@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :listings
   get 'home/index'
 
   resources :profiles, except: [:index]
